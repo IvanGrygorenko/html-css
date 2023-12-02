@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hero .title {
+            color: rgb(17, 17, 17);
+        }
+
+        .title.red {
+            color: rgb(255, 0, 0);
+        }
+
+        .title::before {
+            content: ;
+            display: block;
+            width: 100px;
+            height: 3px;
+            background-color: blue;
+
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: aquamarine;
+        }
+
+        .hero>.title {
+            color: blueviolet;
+        }
+
+        .button+.description {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Selector</h1>
+        <div class="container">
+
+        </div>
+        <section class="hero">
+            <h1 class="title red">test</h1>
+            <h1 class="title">test</h1>
+
+            <div class="box">
+                <h1 class="title">start</h1>
+            </div>
+            <button class="button">go</button>
+
+            <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ex nemo delectus
+                eius dicta quae</div>
+        </section>
+        <section class="section">
+            <h1 class="section__title">
+                Test 1
+
+            </h1>
+        </section>
+    </div>
+
+
+
+
+</body>
+
+</html>
