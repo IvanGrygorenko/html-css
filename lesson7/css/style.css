@@ -66,7 +66,9 @@ body {
     text-align: center;
     align-items: center;
     gap: 16px;
+
 }
+
 
 /* Footer */
 .footer__link {
@@ -87,6 +89,8 @@ body {
     text-align: center;
     align-items: center;
 }
+
+
 
 .h2 {
     font-size: 34px;
@@ -228,6 +232,11 @@ img {
 
 .footer__link a {
     transition: opacity 0.3s ease;
+
+}
+
+.footer__link {
+    justify-content: center;
 }
 
 .footer__link a:hover {
