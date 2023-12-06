@@ -1,0 +1,18 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-font: 'Montserrat', sans-serif;
+    --title-font: 700 44px/54px var(--main-font)
+}
+
+body {
+    font-family: var(--main-font);
+}
+
+h1 {
+    font: var(--title-font);
+}
