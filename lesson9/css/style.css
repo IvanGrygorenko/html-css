@@ -1,17 +1,18 @@
+/* Reset */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* Variable */
 :root {
     --main-font: 'Montserrat', sans-serif;
     --button-font: 'Poppins', sans-serif;
     --title-font: 700 44px/54px var(--main-font);
-    --sub-title-font: 400 18px/28px var(--main-font);
     --header-font: 400 16px/28px var(--main-font);
     --header-button-font: 600 16px/normal var(--main-font);
-    --section-button-font: 700 16px/normal var(--button-font);
+    --sub--title-font: 400 18px/28px var(--main-font);
 
     /* Colors */
     --white-color: #FFF;
@@ -20,11 +21,112 @@
     --orange-color: #FF9900;
 }
 
+/* Body */
+
 body {
     font-family: var(--main-font);
     background-color: var(--white-color);
+    margin: 0;
 }
 
-h1 {
+
+
+/* Header section */
+.header {
+    width: 1440px;
+    padding: 17px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+
+}
+
+.header__img {
+    width: 200px;
+    margin: 24px 200px 24px 120px;
+}
+
+.header__links {
+    display: flex;
+    gap: 20px;
+}
+
+.header__link {
+    color: var(--brown-title-color);
+    text-decoration: none;
+    font: var(--header-font);
+}
+
+.header__buttons {
+
+    display: flex;
+    gap: 32px;
+}
+
+.header__button-01 {
+    color: var(--brown-title-color);
+    background-color: var(--white-color);
+    font: var(--header-button-font);
+    width: 110px;
+    height: 46px;
+    margin: 17px 10px 17px 200px;
+    border-radius: 10px;
+    border-color: var(--white-color);
+}
+
+.header__button-02 {
+    color: var(--white-color);
+    background-color: var(--orange-color);
+    width: 110px;
+    height: 46px;
+    margin: 17px 20px 17px 0;
+    border-radius: 10px;
+    border-color: var(--orange-color);
+
+}
+
+/* Hero section */
+.hero {
+    margin-top: 200px;
+    margin-left: 150px;
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 1200px;
+    margin: 0;
+}
+
+.hero__title {
     font: var(--title-font);
+    width: 500px;
+    color: var(--brown-title-color);
+    margin-bottom: 30px;
+}
+
+.hero__text {
+    font: var(--sub--title-font);
+    width: 500px;
+    color: var(--light-brown-sub-title-color);
+    margin-bottom: 20px;
+}
+
+.hero__button-01 {
+    width: 180px;
+    height: 50px;
+    color: var(--white-color);
+    background-color: var(--orange-color);
+    font: var(--button-font);
+    border-radius: 10px;
+    border-color: var(--orange-color);
+
+}
+
+.hero__image {
+    align-self: flex-end;
+    margin-top: -400px;
+    margin-left: 40px;
 }
