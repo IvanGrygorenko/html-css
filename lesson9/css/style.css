@@ -11,11 +11,18 @@
     --sub-title-font: 400 18px/28px var(--main-font);
     --header-font: 400 16px/28px var(--main-font);
     --header-button-font: 600 16px/normal var(--main-font);
-    --section-button-font: 700 16px/normal var(var(--button-font))
+    --section-button-font: 700 16px/normal var(--button-font);
+
+    /* Colors */
+    --white-color: #FFF;
+    --brown-title-color: #2F281E;
+    --light-brown-sub-title-color: #544837;
+    --orange-color: #FF9900;
 }
 
 body {
     font-family: var(--main-font);
+    background-color: var(--white-color);
 }
 
 h1 {
