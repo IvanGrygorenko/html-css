@@ -6,7 +6,12 @@
 
 :root {
     --main-font: 'Montserrat', sans-serif;
-    --title-font: 700 44px/54px var(--main-font)
+    --button-font: 'Poppins', sans-serif;
+    --title-font: 700 44px/54px var(--main-font);
+    --sub-title-font: 400 18px/28px var(--main-font);
+    --header-font: 400 16px/28px var(--main-font);
+    --header-button-font: 600 16px/normal var(--main-font);
+    --section-button-font: 700 16px/normal var(var(--button-font))
 }
 
 body {
