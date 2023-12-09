@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            max-width: 1160px;
+            background-color: azure;
+            padding: 36px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            justify-content: center;
+
+        }
+
+        .box {
+            height: 333px;
+            background-color: red;
+        }
+
+        .box:first-child {
+            display: flex;
+            padding: 30px;
+            gap: 113px;
+        }
+
+        .box:first-child div {
+            background-color: blue;
+            display: flex;
+            width: 100%;
+        }
+
+        .box:nth-child(2) {
+            background-color: blue;
+        }
+
+        .box:nth-child(3) {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+        <div class="box">
+            <div></div>
+        </div>
+        <div class="box">
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>

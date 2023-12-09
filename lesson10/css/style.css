@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-font: "Montserrat", sans-serif;
+    --title-font: 700 44px/54px var(--main-font);
+    --sub-title-font: 400 18px/28pc var(--main-font);
+    --button-text: 700 16px/24px var(--main-font);
+    --nav-text: 400 16px/28px var(--main-font);
+
+    --black: #2F281E;
+    --lighter-black: #544837;
+    --orange: #FF9900;
+    --white: #FFFFFF;
+
+}
+
+.body {
+    font-family: var(--main-font);
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    align-items: center;
+}
+
+.header {
+    margin: 17px 120px;
+    align-items: center;
+}
+
+.productly {
+    padding-right: 198px;
+}
+
+.header__nav {
+    font: var(--sub-title-font);
+    gap: 20px;
+    padding-right: 198px;
+}
+
+.hero__title {
+    font: var(--title-font);
+    padding: 97px 60px 30px 0px;
+}
+
+.hero__text {
+    font: var(--sub-title-font);
+    padding-bottom: 20px;
+}
+
+.Sign-in {
+    padding: 13px 25px;
+    margin-right: 32px;
+    color: var(--black);
+    font: var(--button-text);
+    background-color: var(--white);
+    border: 0;
+    border-radius: 4px;
+    border: 1px solid #BCD0E5;
+}
+
+.Sign-up {
+    padding: 13px 25px;
+    color: var(--black);
+    font: var(--button-text);
+    background-color: var(--orange);
+    color: var(--white);
+    border: 0;
+    border-radius: 4px;
+
+}
+
+.img {
+    width: 644px;
+    height: 495px;
+}
+
+.button-get-started {
+    padding: 13px 40px;
+    background-color: var(--orange);
+    color: var(--white);
+    border: 0;
+    border-radius: 4px;
+    font: var(--button-text);
+}
