@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .light {
+            --bg-color: #fff;
+            --color-text: #000;
+        }
+
+        .dark {
+            --bg-color: #000;
+            --color-text: #fff;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--color-text);
+        }
+
+        .switch {
+            width: 100px;
+            height: 50px;
+            border: 1px solid;
+            background-color: aquamarine;
+            border-radius: 10px;
+            display: flex;
+            padding: 3px;
+
+        }
+
+        .switch__item {
+            width: 50px;
+            height: 50px;
+            background-color: var(--color-text);
+            border-radius: 50px;
+        }
+
+        .is-active {
+            justify-content: flex-end;
+        }
+    </style>
+</head>
+
+<body class="light">
+    <div class="switch">
+        <div class="switch__item"></div>
+    </div>
+
+    <div>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, accusantium?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sit alias unde nam exercitationem itaque ad
+            aut,
+            error ab sequi.</p>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, accusantium?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sit alias unde nam exercitationem itaque ad
+            aut,
+            error ab sequi.</p>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, accusantium?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sit alias unde nam exercitationem itaque ad
+            aut,
+            error ab sequi.</p>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, accusantium?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sit alias unde nam exercitationem itaque ad
+            aut,
+            error ab sequi.</p>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, accusantium?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sit alias unde nam exercitationem itaque ad
+            aut,
+            error ab sequi.</p>
+
+    </div>
+
+
+
+
+    <script>
+        const btnSwitch = document.querySelector(".switch")
+        const theme = document.querySelector(".light")
+
+
+        btnSwitch.addEventListener("click", () => {
+            theme.classList.toggle("dark")
+            btnSwitch.classList.toggle("is-active")
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Farro:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --main-font: 'Francois One', sans-serif;
+            --text-font: 'PT Sans', sans-serif;
+            --span-font: 'Farro', sans-serif;
+            --span-font01: 300 30px/1px var(--span-font);
+            --title-font: 400 36px/48px var(--main-font);
+            --text-aside-font: 400 28px/48px var(var(--text-font));
+            --main-color: #000;
+
+
+
+
+        }
+
+        .wrapper {
+            max-width: 1440px;
+            margin: 0 auto;
+            margin-left: 120px;
+            position: relative;
+            z-index: 1;
+
+        }
+
+        body {
+
+            width: 1440px;
+            font-family: var(--main-font);
+            color: var(--main-color);
+        }
+
+
+
+
+        .header__container {
+            width: 1200px;
+            height: 54px;
+            display: flex;
+            padding: 13px 120px;
+            justify-content: flex-start;
+            margin-bottom: 70px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #fff;
+            z-index: 999;
+
+
+
+        }
+
+        .header__img {
+            margin: 13px 120px 13px 962px;
+        }
+
+        .header__links {
+            display: flex;
+
+        }
+
+        .header__link1 {
+            margin: 16px 50px 18px 0;
+            text-decoration: none;
+            color: var(--main-color);
+        }
+
+        .header__link {
+            margin: 16px 13px;
+            text-decoration: none;
+            color: var(--main-color);
+        }
+
+        .main__container {
+            display: grid;
+            grid-template-columns: 385px 785px;
+            grid-column-gap: 20px;
+            position: relative;
+        }
+
+        .main {
+            padding-top: 120px;
+        }
+
+
+        .main__link {
+            text-decoration: none;
+            border-bottom: 1px solid;
+            font: var(--title-font);
+            width: 365px;
+            color: var(--main-color);
+        }
+
+        .main__aside {
+            width: 385px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 70px;
+            position: sticky;
+            top: 50px;
+            height: 100vh;
+        }
+
+        h2 {
+            position: relative;
+
+
+        }
+
+        .sub__title {
+            position: absolute;
+            top: -5px;
+            color: #888;
+            font: var(--span-font01);
+            color: #000;
+            font-size: 50%;
+
+
+        }
+
+        .main__text {
+            font-family: var(--text-aside-font);
+            margin-bottom: 70px;
+
+        }
+
+        .main__title {
+            margin-bottom: 40px;
+        }
+
+
+        .image {
+            position: absolute;
+            top: 83px;
+            left: 812px;
+            opacity: 0.2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+
+                <div class="header__links">
+                    <a class="header__link1" href="https://www.linkedin.com" target="_blank">ENG</a>
+                    <a class="header__link" href="https://www.linkedin.com" target="_blank">Documentation</a>
+                    <a class="header__link" href="https://www.linkedin.com" target="_blank">Who`susing</a>
+                </div>
+                <img class="header__img" src="./img/company-logo-black.svg" alt="logo" width="238px">
+
+
+            </div>
+            <main class="main">
+                <div class="main__container">
+                    <aside class="main__aside">
+                        <a class="main__link" href="">INTRODUCTION</a>
+                        <a class="main__link" href="">CORE COMPONENTS</a>
+                        <a class="main__link" href="">REACT FUNDAMENTALS</a>
+                        <a class="main__link" href="">HANDING TEXT INPUT</a>
+
+                    </aside>
+                    <div class="main__content">
+                        <section class="content1">
+                            <img src="./img/divider.svg" alt="img">
+                            <h2 class="main__title">INTRODUCTION <span class="sub__title">Chapter 1</span></h2>
+                            <p class="main__text">
+                                Welcome to the very start of your React Native journey! If you're looking for
+                                environment
+                                setup instructions, they've moved to <u>their own section</u>. Continue reading for an
+                                introduction
+                                to the documentation, Native Components, React, and more!
+
+                            </p>
+                        </section>
+                        <section class="content2">
+                            <img src="./img/divider.svg" alt="img">
+                            <h2 class="main__title">CORE COMPONENTS <span class="sub__title">Chapter 2</span></h2>
+                            <p class="main__text">
+                                React Native is an open source framework for building Android and iOS applications using
+                                React and the app platform’s native capabiles. With React Native, you use JavaScript to
+                                access your platform’s APIs as well as to describe the appearance and behavior of your
+                                UI using React components: <em>bundles of reusable, nestable code</em>. You can learn
+                                more about
+                                React in the next section. But first, let’s cover how components work in React Native.
+
+                            </p>
+                        </section>
+                        <section class="content3">
+                            <img src="./img/divider.svg" alt="img">
+                            <h2 class="main__title">REACT FUNDAMENTALS <span class="sub__title">Chapter 3</span></h2>
+                            <p class="main__text">
+                                React Native runs on <u>React</u>, a popular open source library for building user
+                                interfaces
+                                with JavaScript. To make the most of React Native, it helps to understand React itself.
+                                This section can get you started or can serve as a refresher course.
+                            </p>
+                            <p class="main__text">
+                                We’re going to cover the core concepts behind React:
+                            </p>
+                            <p class="main__text">
+                                <strong>+ components.</strong> The rest of this introduction to React uses cats in its
+                                examples:
+                                friendly,
+                                approachable creatures that need names and a cafe to work in.
+                            </p>
+                            <p class="main__text">
+                                <strong>+ JSX.</strong> React and React Native use JSX, a syntax that lets you write
+                                elements inside
+                                JavaScript
+                                like so: <span class="text__color">&lt;Text&gt;Hello, I am your
+                                    cat!&lt;/Text&gt;.</span>
+                            </p>
+                            <p class="main__text">
+                                The React docs have <u>a comprehensive guide to JSX</u> you can refer to learn even
+                                more.
+                                Because JSX is JavaScript, you can use variables inside it. Here you are declaring a
+                                <span class="text__color">name</span> for the cat,
+                                name, and embedding it with curly braces inside the <span
+                                    class="text__color">&lt;Text&gt;</span>.
+                            </p>
+                            <p class="main__text">
+                                <strong>+ props.</strong> Props is short for “properties”.
+                            </p>
+                            <p class="main__text">
+                                <strong>+ state.</strong> While you can think of props as arguments you use to configure
+                                how components
+                                render, state is like a component’s personal data storage. State is useful for handling
+                                data that changes over
+                                time or that comes from user interaction. State gives your components memory!
+                            </p>
+
+
+                        </section>
+                        <section class="content4">
+                            <img src="./img/divider.svg" alt="img">
+                            <h2 class="main__title">HANDING TEXT INPUT <span class="sub__title">Chapter 4</span></h2>
+                            <p class="main__text">
+                                TextInput is a Core Component that allows the user to enter text. It has an
+                                <em>onChangeText</em>
+                                prop that takes a function to be called every time the text changed, and an
+                                onSubmitEditing
+                                prop that takes a function to be called when the text is submitted.
+                            </p>
+                            <p class="main__text">
+                                For example, let's say that as the user types, you're translating their words into a
+                                different language. In this new language, every single word is written the same way: 🍕.
+                                So the sentence "Hello there Bob" would be translated as "🍕 🍕".
+                            </p>
+                        </section>
+
+                        <div class="img">
+                            <img class="image" src="./img/bg-picture.svg" alt="image">
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+
+
+
+            </main>
+
+
+
+
+        </header>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>
