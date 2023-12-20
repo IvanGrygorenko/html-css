@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            width: 570px;
+            height: 590px;
+            flex-shrink: 0;
+
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            transition: border-color 0.3s;
+        }
+
+        input:focus,
+        select:focus {
+            border-color: #3498db;
+            outline: none;
+        }
+
+        .button1 {
+            width: 100%;
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        a {
+
+            text-align: center;
+            margin-top: 10px;
+            color: #3498db;
+            text-decoration: none;
+
+        }
+
+        hr {
+            margin: 20px 0;
+            border: 0;
+            border-top: 1px solid #ccc;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        .input-half {
+            width: 48%;
+            box-sizing: border-box;
+        }
+
+        .radio-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        .radio-container label {
+            margin-left: 5px;
+        }
+
+        .radio-button {
+            position: relative;
+            width: 16px;
+            height: 16px;
+            border-radius: 80%;
+            border: 2px solid #3498db;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+
+        .radio-button::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 8px;
+            height: 8px;
+            background-color: #3498db;
+            border-radius: 50%;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        input[type="radio"] {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        input[type="radio"]:checked+.radio-button::after {
+            opacity: 1;
+        }
+
+        .text1 {
+
+            text-align: center;
+            margin-top: 20px;
+            margin-left: 81px;
+            margin-bottom: 30px;
+
+            color: #555;
+            width: 410px;
+            flex-shrink: 0;
+        }
+
+        .text1 a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .text1 a:hover {
+            text-decoration: underline;
+        }
+
+        .line {
+            margin: 20px 0;
+            border: 0;
+            border-top: 1px solid #ccc;
+        }
+
+        .button2 {
+
+            width: 150px;
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+
+        }
+
+        .avatar {
+            display: flex;
+        }
+
+        img {
+            margin-bottom: 20px;
+        }
+
+        .ava__input {
+            display: flex;
+            width: 138px;
+            height: 30px;
+        }
+
+        .button__form-2 {
+            display: flex;
+            width: 138px;
+            height: 30px;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            margin-top: 10px;
+            margin-left: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            transition: border-color 0.3s;
+            background-image: url('./img/Photo\ Camera.svg');
+            background-size: contain;
+            background-position: right;
+            background-repeat: no-repeat;
+            cursor: pointer;
+
+        }
+
+
+
+
+        .button__form-3 {
+            display: flex;
+            width: 30px;
+            height: 30px;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            margin-top: 10px;
+            margin-left: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            transition: border-color 0.3s;
+            background-image: url('./img/Trash.svg');
+            background-size: cover;
+            background-position: right;
+            background-repeat: no-repeat;
+            cursor: pointer;
+        }
+
+        .form__text {
+            display: flex;
+        }
+    </style>
+    <title>Forms</title>
+</head>
+
+<body>
+    <form>
+        <div class="form__text">
+            <h2>Create an Account</h2>
+        </div>
+
+
+        <div class="flex-container">
+            <div class="input-half">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" required>
+            </div>
+            <div class="input-half">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" required>
+            </div>
+        </div>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+
+        <div class="flex-container">
+            <div class="radio-container">
+                <input type="radio" name="gender" value="male" id="maleRadio">
+                <label class="radio-button" for="maleRadio"></label>
+                <label for="maleRadio">Male</label>
+
+                <input type="radio" name="gender" value="female" id="femaleRadio">
+                <label class="radio-button" for="femaleRadio"></label>
+                <label for="femaleRadio">Female</label>
+            </div>
+        </div>
+
+        <div class="flex-container">
+            <div class="input-half">
+                <label for="country">Country</label>
+                <select id="country">
+                    <option value="select">Select</option>
+
+                </select>
+            </div>
+            <div class="input-half">
+                <label for="city">City</label>
+                <input type="text" id="city">
+            </div>
+        </div>
+
+        <button class="button1" type="submit">Sign Up</button>
+
+        <p class="text1">By clicking the 'Sign Up' button, you confirm that you accept our <a href="#">Terms of Use</a>
+            and <a href="#">Privacy Policy</a></p>
+        <hr class="line">
+
+        <p class="text1">Have an account? <a href="#">Log in</a>
+
+    </form>
+
+    <form>
+        <h2 class="form__text">Profile</h2>
+
+        <div class="avatar">
+            <img src="./img/Image.svg" alt="Avatar">
+
+            <button class="button__form-2"></button>
+            <button class="button__form-3"></button>
+        </div>
+
+
+        <div class="flex-container">
+            <div class="input-half">
+                <label for="name">Name</label>
+                <input type="text" id="name">
+            </div>
+            <div class="input-half">
+                <label for="Email">Email</label>
+                <input type="email" id="Email">
+            </div>
+        </div>
+
+        <div class="flex-container">
+            <div class="input-half">
+                <label for="profileCountry">Country</label>
+                <select id="profileCountry">
+                    <option value="select">Select</option>
+
+                </select>
+            </div>
+            <div class="input-half">
+                <label for="City">City</label>
+                <input type="text" id="City">
+            </div>
+        </div>
+
+        <div class="flex-container">
+            <div class="input-half">
+                <label for="zipCode">Zip Code</label>
+                <input type="text" id="zipCode">
+            </div>
+            <div class="input-half">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="tel" id="phoneNumber">
+            </div>
+        </div>
+
+        <button class="button2" type="submit">Update</button>
+    </form>
+</body>
+
+</html>

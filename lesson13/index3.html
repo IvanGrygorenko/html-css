@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #chak01 {
+            display: none;
+        }
+
+        .form__label {
+            position: relative;
+            padding-left: 20px;
+            cursor: pointer;
+            display: block;
+        }
+
+
+        .form__label::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 24px;
+            height: 24px;
+            border: 1px solid #000;
+
+
+        }
+
+        .form__label::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 24px;
+            height: 24px;
+            background: url('./img/Group\ 3729.svg') no-repeat;
+            display: none;
+
+        }
+
+        .form__checkbox-text {
+            margin-left: 10px;
+            display: block;
+
+        }
+
+        #chak01:checked+.form__label::before {
+            display: none;
+
+        }
+
+        #chak01:checked+.form__label::after {
+            display: block;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form__checkbox">
+        <input id="chak01" type="checkbox" required>
+        <label class="form__label" for="chak01">
+            <div class="form__checkbox-text">
+                Тобі є 18 років
+            </div>
+        </label>
+    </div>
+</body>
+
+</html>

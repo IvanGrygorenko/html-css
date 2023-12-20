@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Сховати звичайний чекбокс */
+        /* #chak01 {
+            display: none;
+        } */
+
+        .form__label {
+            position: relative;
+            padding-left: 30px;
+            cursor: pointer;
+        }
+
+
+        .form__label::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            background-size: cover;
+
+        }
+
+
+        .form__checkbox-text {
+            margin-left: 30px;
+
+        }
+
+
+        #chak01:checked+.form__label::before {
+
+            background: url('./img/Group\ 3729.svg') no-repeat;
+
+            background-size: cover;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form__checkbox">
+        <input id="chak01" type="checkbox" required>
+        <label class="form__label" for="chak01">
+            <div class="form__checkbox-text">
+                Тобі є 18 років
+            </div>
+        </label>
+    </div>
+</body>
+
+</html>
